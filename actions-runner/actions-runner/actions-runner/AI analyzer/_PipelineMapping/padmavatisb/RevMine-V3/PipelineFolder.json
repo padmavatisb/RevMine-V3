@@ -1,0 +1,12 @@
+﻿{
+  "repositoryName": "padmavatisb/RevMine-V3",
+  "pipelineDirectory": "RevMine-V3",
+  "workspaceDirectory": "RevMine-V3\\RevMine-V3",
+  "repositories": {
+    "padmavatisb/RevMine-V3": {
+      "repositoryPath": "RevMine-V3\\RevMine-V3",
+      "lastRunOn": "02/01/2026 23:44:06 +05:30"
+    }
+  },
+  "lastRunOn": "02/01/2026 23:44:06 +05:30"
+}
