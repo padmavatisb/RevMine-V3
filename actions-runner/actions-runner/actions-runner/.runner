@@ -1,0 +1,11 @@
+﻿{
+  "agentId": 22,
+  "agentName": "PR comment analyser",
+  "poolId": 1,
+  "poolName": "Default",
+  "serverUrl": "https://pipelinesghubeus14.actions.githubusercontent.com/pcSz2RxXN9AFwLhI4KgAYIUbKbLtxYDggLJdNrGfWsW37JsYTH/",
+  "gitHubUrl": "https://github.com/padmavatisb/RevMine-V3",
+  "workFolder": "AI analyzer",
+  "useV2Flow": true,
+  "serverUrlV2": "https://broker.actions.githubusercontent.com/"
+}

@@ -1,0 +1,21 @@
+name: AI PR Researcher
+on:
+  issue_comment:
+    types: [created]
+
+jobs:
+  analyze:
+    runs-on: self-hosted  # Targets your PC
+    if: github.event.issue.pull_request # Only run on PRs
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Run DeepSeek Analysis
+        env:
+          COMMENT_BODY: ${{ github.event.comment.body }}
+        run: python scripts/analyze_comment.py
+
+      - name: Post Results
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh pr comment ${{ github.event.issue.number }} --body-file research_report.md
